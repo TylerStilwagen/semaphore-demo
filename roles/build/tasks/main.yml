@@ -19,7 +19,8 @@
 
 
 - name: Builds an artifact and stores it in storage
-  sleep: 5
+  ansible.builtin.pause:
+    seconds: 10
 
 - name: Builds an artifact and stores it in storage
   ansible.builtin.archive:
